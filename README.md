@@ -1,6 +1,6 @@
 # DevMacro
 
-The RunMacro is a simple but powerful component that allows you to generate a "macro".
+The MacroButton is a simple but powerful component that allows you to generate a "macro".
 This macro is intended to click around things on screen to get you from point A to point Z fast.
 
 This is usual if you are developing something that requires you to click a lot of things before getting to the screen you are working on.
@@ -11,9 +11,9 @@ The scripts assume you have `Code/workvivo` in your home directory. If not, you 
 
 ## Files
 
-- `AddMacro.js`: Script to add a macro.
-- `RemoveMacro.js`: Script to remove a macro.
-- `RunMacro.jsx`: The Macro button component.
+- `AddMacro.js`: Script to add the Macro button to top nav.
+- `RemoveMacro.js`: Script to remove the Macro button (reverts TopNav.jsx).
+- `MacroButton.jsx`: The Macro button component.
 
 ## Usage
 
@@ -24,4 +24,4 @@ The scripts assume you have `Code/workvivo` in your home directory. If not, you 
 
 Every time you run AddMacro it overrides the previous version.
 
-Change the RunMacro.jsx code to update your macro.
+Change the MacroButton.jsx code to update your macro.
