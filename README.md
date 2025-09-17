@@ -9,6 +9,8 @@ The scripts included make it easy for you to add and remove the Macro button to 
 
 The scripts assume you have `Code/workvivo` in your home directory. If not, you will have to update the locations manually.
 
+⚠️ This assumes you are not working on TopNav.jsx at the same time. If you are, then be careful not to commit any of this.
+
 ## Files
 
 - `AddMacro.js`: Script to add the Macro button to top nav.
