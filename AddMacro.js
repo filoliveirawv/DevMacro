@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const { execSync } = require("child_process");
 
-const srcMacro = "./MacroButton.jsx";
+const srcMacro = path.join(__dirname, "MacroButton.jsx");
 const navPath = path.join(
   process.env.HOME,
   "Code/workvivo/spark/src/wv-components/Navigation"
@@ -11,7 +11,9 @@ const topNavPath = path.join(navPath, "TopNav.jsx");
 
 //   Before anything, lets revert to original
 try {
-  execSync("node RemoveMacro.js", { stdio: "inherit" });
+  execSync(`node "${path.join(__dirname, "RemoveMacro.js")}"`, {
+    stdio: "inherit",
+  });
 } catch (err) {
   console.error("Failed to run RemoveMacro.js:", err.message);
 }
